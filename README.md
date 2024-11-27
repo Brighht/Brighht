@@ -1,4 +1,4 @@
-# profile
+
 <h1 align="center">Hi 👋, I'm Bright Andoh</h1>
 <h3 align="center">Just a guy getting interested in low level</h3>
 
