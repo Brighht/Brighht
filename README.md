@@ -1,4 +1,4 @@
-### "Nothing Interesting in Life"
+### "Finding out how Interesting Life can be"
 
 ### Tech Stack:
 C,C++,python,rust,html,css
