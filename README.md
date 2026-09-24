@@ -3,18 +3,18 @@
 ```
 ██████╗ ██████╗ ██╗ ██████╗ ██╗  ██╗████████╗
 ██╔══██╗██╔══██╗██║██╔════╝ ██║  ██║╚══██╔══╝
-██████╔╝██████╔╝██║██║  ███╗███████║   ██║   
-██╔══██╗██╔══██╗██║██║   ██║██╔══██║   ██║   
-██████╔╝██║  ██║██║╚██████╔╝██║  ██║   ██║   
-╚═════╝ ╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝  
+██████╔╝██████╔╝██║██║  ███╗███████║   ██║
+██╔══██╗██╔══██╗██║██║   ██║██╔══██║   ██║
+██████╔╝██║  ██║██║╚██████╔╝██║  ██║   ██║
+╚═════╝ ╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝
 ```
 
 ### Computer Engineering · University of Alabama
-**FPGA Development · Digital Design · EDA Tooling**
+**Embedded Systems · FPGA / Digital Design · C/C++ · Robotics**
 
-[![](https://img.shields.io/badge/Focus-FPGA%20%26%20RTL%20Design-1B2A4A?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0xMiAyQzYuNDggMiAyIDYuNDggMiAxMnM0LjQ4IDEwIDEwIDEwIDEwLTQuNDggMTAtMTBTMTcuNTIgMiAxMiAyek0xMiA0YzQuNDEgMCA4IDMuNTkgOCA4cy0zLjU5IDgtOCA4LTgtMy41OS04LTggMy41OS04IDgtOHoiLz48L3N2Zz4=)](https://github.com/brighht)
-[![](https://img.shields.io/badge/Board-Lattice%20iCE40%20UPduino-0E7490?style=for-the-badge)](https://github.com/brighht)
-[![](https://img.shields.io/badge/Tools-Quartus%20Prime%20%7C%20Cadence%20%7C%20LTspice-2563EB?style=for-the-badge)](https://github.com/brighht)
+[![GitHub](https://img.shields.io/badge/GitHub-Brighht-181717?style=for-the-badge&logo=github)](https://github.com/Brighht)
+[![Ackermann Lab](https://img.shields.io/badge/Current-Ackermann%20Lab-2563EB?style=for-the-badge)](https://github.com/Brighht/ackermann-lab-)
+[![FootballVision](https://img.shields.io/badge/Project-FootballVision-0E7490?style=for-the-badge)](https://github.com/Brighht/footballvision)
 
 </div>
 
@@ -22,71 +22,84 @@
 
 ## About
 
-I'm a Computer Engineering student at the University of Alabama, focused on the intersection of **digital hardware design** and **EDA tooling**. My work lives at the boundary where logic meets silicon — building and verifying designs that actually run on real hardware.
+I'm a Computer Engineering student at the University of Alabama interested in the point where **software meets hardware**. I build projects in digital design, embedded systems, robotics, and C/C++ to turn coursework and theory into working implementations.
 
-I work with FPGAs not just as a learning tool but as a platform for solving real problems: serial communication interfaces, display controllers, and eventually softcore processors. On the software side, I build systems-level applications in C/C++ where performance and hardware awareness matter.
-
----
-
-## Hardware I Work With
-
-| Board | Fabric | Toolchain |
-|---|---|---|
-| Lattice iCE40 UPduino 3.1 | 5.3K LUTs · 30 DSPs · 1Mb SPRAM | OSS CAD Suite (Yosys + nextpnr) |
-| Intel DE1 (Altera Cyclone II) | 20K LEs · PLLs · embedded memory | Quartus Prime |
+This profile is intentionally linked to the actual repositories behind the projects below. Click a project title to inspect the source, commits, documentation, and current progress.
 
 ---
 
-## Projects
+## Featured Projects
 
-### 🔷 FPGA & Digital Design
+### 🚗 [Ackermann Lab](https://github.com/Brighht/ackermann-lab-)
 
-#### [`modulo60-bcd-counter`](https://github.com/brighht/modulo60-bcd-counter)
-> Modulo-60 BCD counter implemented in Quartus Prime schematic capture on the DE1 FPGA board. Counts 00–59 with correct carry chain, reset logic, and 7-segment display output. Built as part of coursework in digital electronics; debugged missing carry connections and floating control pins through simulation and hardware verification.
+A C++ autonomous-vehicle project built around an **Ackermann-steering chassis, Raspberry Pi 5, and Arduino Uno**. The architecture separates high-level processing on the Raspberry Pi from low-level steering and motor control on the Arduino.
 
-`Quartus Prime` `Schematic Capture` `BCD Logic` `DE1 Board` `7-Segment Display`
+**Current work:** CMake project structure, vehicle-command validation, command serialization, and the software interfaces that will connect the control stack to hardware.
 
----
+`C++` `CMake` `Raspberry Pi 5` `Arduino Uno` `Robotics`
 
-#### [`uart-controller-ice40`](https://github.com/brighht/uart-controller-ice40) *(in progress)*
-> UART transmitter and receiver implemented in Verilog on the Lattice iCE40 UPduino 3.1. Includes FSM-based TX/RX modules, simulation testbench, and hardware validation. Part of a broader series building communication protocol IPs on open-source FPGA tooling.
-
-`Verilog` `UART` `FSM Design` `UPduino` `OSS CAD Suite` `Testbench`
+**→ [View the repository and source code](https://github.com/Brighht/ackermann-lab-)**
 
 ---
 
-### ⚙️ Systems & C/C++
+### ⚽ [FootballVision](https://github.com/Brighht/footballvision)
 
-#### [`football-tactics-visualizer`](https://github.com/brighht/football-tactics-visualizer) *(in progress)*
-> Desktop application for visualizing and animating football (soccer) tactics, built in C/C++ with SDL2 on Linux (WSL2). Renders a pitch, supports real-time player movement, and is being extended with tactic playback and formation editing. Motivated by a genuine interest in football analysis.
+A C++ desktop application for interactive football video analysis. The project includes tools for **player tracking, zone and shape visualization, highlighting, and studying positioning and spatial relationships on match footage**.
 
-`C/C++` `SDL2` `WSL2` `2D Graphics` `Game Loop Architecture`
+The repository README includes working video previews and a UI screenshot.
+
+`C++` `Computer Vision` `Desktop Application` `Sports Analytics`
+
+**→ [View the repository, demos, and source](https://github.com/Brighht/footballvision)**
+
+---
+
+### 🔷 [4-bit ALU Implementation](https://github.com/Brighht/Alu_impl)
+
+A VHDL arithmetic/logic unit developed for digital-logic coursework and targeted at an **Altera Cyclone V FPGA**. The project documents the entity interface, Quartus Prime workflow, and ModelSim simulation.
+
+`VHDL` `Quartus Prime` `ModelSim` `Cyclone V` `Digital Logic`
+
+**→ [View the VHDL project](https://github.com/Brighht/Alu_impl)**
+
+---
+
+### 🔢 [Modulo-60 BCD Counter](https://github.com/Brighht/modulo60-bcd-counter)
+
+A digital-logic project implementing a modulo-60 BCD counter. The repository contains the project files so the implementation can be inspected directly rather than existing only as a résumé bullet.
+
+`Digital Logic` `BCD` `FPGA`
+
+**→ [View the project files](https://github.com/Brighht/modulo60-bcd-counter)**
 
 ---
 
 ## Skills & Tools
 
 ```
-HDL          →  Verilog · (learning SystemVerilog)
-FPGA Tools   →  Quartus Prime · OSS CAD Suite · Yosys · nextpnr
-EDA / Sim    →  Cadence · LTspice · OrCAD · ModelSim
-Languages    →  C · C++ · (Python for scripting)
-Platforms    →  Lattice iCE40 · Intel Cyclone II · WSL2 / Linux
+Languages     →  C · C++ · VHDL · Verilog
+Embedded      →  Raspberry Pi · Arduino
+FPGA / EDA    →  Quartus Prime · ModelSim · Cadence · LTspice
+Robotics      →  Ackermann steering · sensor/control interfaces
+Software      →  CMake · Git · Linux
 ```
 
 ---
 
 ## What I'm Building Toward
 
-Right now I'm working through a self-directed series of FPGA projects on the UPduino — UART, SPI, display controllers, and eventually a minimal softcore CPU. The goal is to build genuine hardware intuition, not just pass coursework.
+I'm building a portfolio where each technical claim can be followed to something concrete: **source code, hardware-oriented projects, simulations, demos, or documented engineering decisions**.
 
-If you're working on digital design, FPGA tooling, or embedded systems and want to connect — feel free to reach out.
-bright.andohh@gmail.com
+Current focus: developing the Ackermann platform from a clean C++ command/control layer toward Raspberry Pi–Arduino communication and physical vehicle control.
+
+### Explore the work
+
+**[Ackermann Lab](https://github.com/Brighht/ackermann-lab-) · [FootballVision](https://github.com/Brighht/footballvision) · [ALU Implementation](https://github.com/Brighht/Alu_impl) · [Modulo-60 Counter](https://github.com/Brighht/modulo60-bcd-counter)**
 
 ---
 
 <div align="center">
 
-*University of Alabama · Computer Engineering · Tuscaloosa, AL*
+*University of Alabama · Computer Engineering*
 
 </div>
